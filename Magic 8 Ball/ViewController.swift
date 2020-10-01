@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var magicBallImage: UIImageView!
     
     @IBAction func onPressAskButton(_ sender: UIButton) {
-        magicBallImage.image = #imageLiteral(resourceName: "ball2")
+        // ..< means inclusive.
+        magicBallImage.image = ballArray[Int.random(in: 0..<5)]
     }
 }
